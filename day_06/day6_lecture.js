@@ -34,8 +34,12 @@ console.log(document);
 // ******** jQuery *********
 // -JavaScript allows us to access elements in the DOM.  While this is typically
 //  easy to do, there are certain cross-browser inconsistencies that can lead to
-//  mistakes.  jQuery allows us to avoid some of those issues, while also making it
-//  easier to grab elements in the DOM with much less typing.
+//  mistakes.
+// -This is where jQuery comes in.  jQuery is a JS library that allows us to avoid
+// some of those issues, while also making it easier to grab elements in the DOM
+// with much less typing.
+// -A JS library is pre-written JavaScript that allows for easier development
+// of javascript applications.
 var my_heading_js = document.getElementsByTagName('h1');
 console.log(my_heading_js);
 // OR
