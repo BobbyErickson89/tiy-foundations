@@ -51,8 +51,10 @@
 // -Selecting HTML elements and classes will work the same way in jQuery as it
 //  does in CSS.  For example:
 // var first_paragraph = $('.first-paragraph');
+// console.log(first_paragraph);
 // OR
 // var my_paragraphs = $('section p');
+// console.log(my_paragraphs);
 
 
 
@@ -62,18 +64,19 @@
 // jQuery makes it simple to add and remove elements to the DOM.  jQuery has some
 // built-in functions that makes manipulating the DOM very easy.  .append() and
 // .prepend() allow us to add elements to the beginning or end of an element.
-// var new_paragraph = "<p class='my-new-paragraph'>Here is my new paragraph</p>";
-// $('section').append(new_paragraph);
+// var new_paragraph = "<p>Here is my new paragraph</p>";
+// console.log(new_paragraph);
+// $('section').prepend(new_paragraph);
 
 // We are also able to remove elements with the .remove() function that comes with
 // jQuery.
-// $('.my-new-paragraph').remove();
+// $('.first-paragraph').remove();
 
 
 // ******** Modifying Elements ********
 // Along with adding and removing elements, jQuery is also used to modify existing
 // elements.  Some commonly used functions are .addClass(), .removeClass()
-// $('.second-section p').addClass('');
+// $('.second-section p').addClass('second-section-paragraph');
 // You can also go ahead and change defined CSS properties with jQuery
 // var html_body = $('body')
 // html_body.css('background-color', 'green');
@@ -81,15 +84,16 @@
 
 // ******* jQuery Traversal *******
 // jQuery can also be used to search down the DOM.  For example:
-// var my_sections = $('body').find('section');
+// var my_sections = $('.first-paragraph').find('p');
 // console.log(my_sections);
 
 
 // ******* jQuery Events *******
 // jQuery can also be used to have functions happen when doing a certain event on
 // the page, like clicking.
-// function changing_color(){
-//   $('.second-section').append('<p>Here is a new paragraph</p>');
-// }
+function adding_paragraph(){
+  $('.second-section').css('background-color', 'green');
+  console.log('changing the color!');
+}
 //
-// $('.event_button').click(changing_color);
+$('.event_button').click(adding_paragraph);
