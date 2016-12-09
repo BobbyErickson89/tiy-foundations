@@ -1,0 +1,284 @@
+/* BASE STYLES --------*/
+body {
+  background: #ffffff;
+  color: #967878;
+  font-family: "Open Sans", Helvetica, Arial, sans-serif;
+  font-size: 15px;
+}
+
+h1, h2, h3, h4, h5 {
+  font-family: "Jaldi", Helvetica, Arial, sans-serif;
+}
+
+h1 {
+  color: #ffffff;
+  font-size: 50px;
+  font-weight: normal;
+  margin-bottom: 0;
+}
+
+h2 {
+  color: #503226;
+  font-size: 26px;
+  margin: 10px 0;
+  font-weight: normal;
+}
+
+h3 {
+  color: #503226;
+  font-size: 19px;
+  font-weight: normal;
+  margin: 10px 0;
+}
+
+p {
+  line-height: 30px;
+}
+
+sup {
+  font-size: 60%;
+  padding: 0 4px;
+}
+
+/* COMPONENT STYLES --------*/
+.container {
+  margin: auto;
+  max-width: 1000px;
+  padding: 40px 20px 70px;
+}
+
+.logo {
+  width: 50px;
+  float: left;
+  margin-right: 10px;
+}
+
+.smallbold {
+  color: rgba(0,0,0,0.4);
+  display: block;
+  font-size: 15px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.navigation ul {
+  margin: 0;
+  padding: 0;
+}
+
+.navigation li {
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+}
+
+.navigation a {
+  border-bottom: 3px solid transparent; /* Necessary for :hover & .active */
+  color: #FF512F;
+  cursor: pointer;
+  display: block;
+  font-weight: bold;
+  margin: 0 12px 0 0;
+  padding: 4px 2px;
+  text-decoration: none;
+  font-family: "Jaldi", Helvetica, Arial, sans-serif;
+}
+
+.navigation a.active,
+.navigation a:hover {
+  border-bottom-color: #fbc2c3;
+}
+
+.navigation a.active {
+  color: #b1290e;
+}
+
+/* LAYOUT STYLES --------*/
+/* HEADER --*/
+.header {
+  padding: 20px;
+}
+
+.header .primary-navigation.navigation {
+  float: left;
+}
+
+.header .primary-navigation.navigation a {
+  text-transform: uppercase;
+}
+
+.header .secondary-navigation.navigation {
+  float: right;
+}
+
+.header .secondary-navigation.navigation a {
+  color: #ff9495;
+}
+
+.header .secondary-navigation.navigation a .cart {
+  margin-right: 2px;
+  vertical-align: -1px;
+  width: 20px;
+}
+
+/* PRODUCT SPOTLIGHT --*/
+.product-spotlight {
+  background: linear-gradient(to left, #FF512F, #DD2476);
+  box-shadow: 0 10px 0 0 rgba(0, 0, 0, 0.05) inset;
+  color: #ffffff;
+}
+
+.product-spotlight .back-link {
+  color: #ffffff;
+  display: block;
+  font-size: 12px;
+  margin: 0 0 40px;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.product-spotlight .product-image {
+  float: left;
+  width: 60%;
+}
+
+.product-spotlight .product-image .image {
+  width: 90%;
+}
+
+.product-spotlight .product-info {
+  float: left;
+  width: 40%;
+}
+
+.product-spotlight .product-info .info {
+  border-bottom: 2px dashed rgba(0,0,0,0.1);
+  border-top: 2px dashed rgba(0,0,0,0.1);
+  padding: 20px 0;
+}
+
+.product-spotlight .info a {
+  color: #ffffff;
+  line-height: 28px;
+  color: rgba(0,0,0,0.4);
+  float: right;
+}
+
+.product-spotlight .price {
+  display: inline-block;
+  font-family: "Jaldi", Helvetica, Arial, sans-serif;
+  font-size: 30px;
+  font-weight: bold;
+  padding: 0 15px 0 0;
+}
+
+.product-spotlight .button {
+  background: #ffffff;
+  border-radius: 6px;
+  border: 2px solid transparent;
+  display: inline-block;
+  font-size: 15px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  padding: 13px 20px;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #FF512F;
+  font-weight: bold;
+  transition: all 0.2s ease;
+}
+
+.product-spotlight .button:hover {
+  background: transparent;
+  border-color: #ffffff;
+  color: #ffffff;
+}
+
+/* PRODUCT DETAILS --*/
+.product-detail .navigation {
+  border-bottom: 1px solid #fbc2c3;
+  font-size: 20px;
+}
+
+.product-detail .navigation .reviews {
+  float: right;
+}
+
+.product-detail .navigation .reviews a {
+  color: #ff9495;
+  font-size: 16px;
+  padding-bottom: 9px;
+}
+
+.product-detail .content {
+  margin: 30px 0 50px;
+}
+
+/* MORE PRODUCTS --*/
+.more-products {
+  background: linear-gradient(to left, #FF512F, #DD2476);
+}
+
+.more-products h2 {
+  background: rgba(255,255,255,0.9);
+  padding: 20px;
+  text-align: center;
+}
+
+.more-products .product {
+  border-radius:6px;
+  color: #ffffff;
+  cursor: pointer;
+  display: block;
+  float: left;
+  padding: 30px 3% 10px;
+  text-decoration: none;
+  width: 27%;
+  transition: background 0.2s ease;
+}
+
+.more-products .product .image {
+  width: 100%;
+  transition: transform 0.2s ease;
+}
+
+.more-products .product h3 {
+  color: #ffffff;
+  margin: 10px 0;
+  font-size: 26px;
+  float: left;
+}
+
+.more-products .product .price {
+  font-size: 24px;
+  font-family: "Jaldi", Helvetica, Arial, sans-serif;
+  float: right;
+  margin: 8px 0 0;
+}
+
+.more-products .product:hover {
+  background: rgba(0,0,0,0.1);
+}
+
+.more-products .product:hover .image {
+  transform: scale(1.05);
+}
+
+/* FOOTER --*/
+.footer {
+  padding: 20px;
+}
+
+.footer .navigation {
+  float: left;
+}
+
+.footer .legal {
+  font-size: 12px;
+  float: right;
+  margin-top: 6px;
+}
+
+.footer .legal a {
+  color: #967878;
+}

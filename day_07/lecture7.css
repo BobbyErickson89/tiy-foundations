@@ -1,0 +1,13 @@
+.box {
+  height: 400px;
+  width: 400px;
+  border: 1px solid black;
+  display: inline-block;
+}
+
+@media screen and (max-width: 1250px){
+  .box {
+    display: block;
+    width: 100%;
+  }
+}
