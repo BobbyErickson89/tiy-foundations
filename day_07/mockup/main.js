@@ -46,7 +46,3 @@ function showRatingText(){
 }
 
 $('.rating-tab').click(showRatingText);
-
-
-
-$('.section-1 p')
